@@ -8,6 +8,65 @@
 	margin: 0;
 	padding: 0;
 }
+
+/* Navigation Section */
+#header  {
+    height: 1 px;
+    width: 100%;
+    background-color: #FFF;
+}
+#top-bar {
+    background-image: url(images/top-bar_bg.jpg);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 9px;
+}
+
+
+/* ~~ Top Navigation Bar ~~ */
+.navigation-bar   {
+    background-color: #74c22e;
+    height: 100px;
+    width: 100%;
+    background-image: url(images/nav-bar_bg.png);
+    background-repeat: repeat-x;
+    
+}
+
+.navigation-bar ul   {
+    padding: 0px;
+    margin: 0px;
+  text-align:center;
+}
+.navigation-bar li    {
+    list-style-type: none;
+    padding: 0px;
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  display:inline;
+  float:left;
+  
+}
+.navigation-bar li a    {
+    color: #5c7d3e;
+    background-color: #FFF;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    box-shadow: 2xp 2px 3px inset;
+    border-radius: 5px;
+    padding-right: 1em;
+    padding-left: 1em;
+    line-height: 2em;
+    margin-right: 16px;
+}
+.navigation-bar li:first-child {
+    margin-left:20px;
+    border:#C00;
+}
+
 body {
 	background: url(images/noiselight-grey.jpg);
 	font-family: 'Helvetica Neue', arial, sans-serif;
@@ -149,7 +208,22 @@ margin:0;
 </head>
 
 <body>
-
+<div id="header">
+  <div id="top-bar"></div>  
+  
+<!-- end .header --> </div>
+  <div class="navigation-bar">
+      <div id="navigation-container" class="cf">
+       <ul>
+       <li><a href="https://rizabarone.github.io/aboutme/index.html">About Me</a></li>
+       <li><a href="https://rizabarone.github.io/portfolioprojects/index.html">Portfolio</a></li>
+       <li><a href="#">Contact</a></li></a><li>
+        
+        
+        </ul>
+      </div>
+    
+</div>
 <div class="wrapper">
 	<div class="container">
 		<h1>My Portfolio</h1>
@@ -160,6 +234,8 @@ margin:0;
 		</ul>
 		
 		<hr />
+
+
 		
 		<div id="two-columns" class="grid-container" style="display:block;">
 			<ul class="rig columns-2">
